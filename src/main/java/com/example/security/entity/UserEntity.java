@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "users")
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class User extends Auditable {
+public class UserEntity extends Auditable {
     @Column(unique = true, updatable = false, nullable = false)
     private String userId;
     private String firstName;
